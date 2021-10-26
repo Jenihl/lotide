@@ -6,12 +6,13 @@ const assertEqual = function(actual, expected) {
   }
 };
 
+//method .slice returns new array, slices from index thats given (1) to the end of the given array. so Lighthouse/labs is taken out
 const tail = function(array) {
   return array.slice(1);
 };
-
+// 
 const result = tail(["Hello", "Lighthouse", "Labs"]);
-assertEqual(result, ["Lighthouse", "Labs"]);
+assertEqual(result, ["Hello"]);
 
 const words = ["Yo Yo", "Lighthouse", "Labs"];
 tail(words);
