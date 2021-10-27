@@ -10,9 +10,10 @@ const assertEqual = function(actual, expected) {
 const tail = function(array) {
   return array.slice(1);
 };
-// 
+
 const result = tail(["Hello", "Lighthouse", "Labs"]);
-assertEqual(result, ["Hello"]);
+//asking the function above if "Hello" array is same as lighthouse labs array below
+assertEqual(result, ["Lighthouse", "Labs"]);
 
 const words = ["Yo Yo", "Lighthouse", "Labs"];
 tail(words);
