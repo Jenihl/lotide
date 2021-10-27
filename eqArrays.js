@@ -6,20 +6,16 @@ const assertEqual = function(actual, expected) {
   }
 }
   ;
-
-  function eqArrays(firstArray, secondArray){
-    if(firstArray.length !== secondArray.length) {
-      return false;
-    }
-for(let i = 0; i < firstArray.length; i++) {
-  if(Array.isArray(firstArray[i]) && (eqArrays(firstArray[i], secondArray[i] === false))) {
-    return false;
-  }
-  if(!(Array.isArray(firstArray[i])) && firstArray[i] !== secondArray[i]) {
-    return false;
-  }
-}
-return true;
-  }
-
+//implement a function that can compare two arrays for a perfect match.
+ const eqArrays = function(arr1, arr2) {
+   if (arr1.length !== arr2.length) {
+     return false;
+   }
+   for(let i = 0; i < arr1.length; i++) {
+     if(arr1[i] !== arr2[i]) {
+       return false;
+     }
+   }
+   return true;
+ }
   assertEqual(eqArrays([1, 2, 3], [1, 2, 3]), true);
