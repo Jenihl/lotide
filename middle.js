@@ -27,7 +27,7 @@ const assertEqual = function(actual, expected) {
     } else if(array.length  % 2 === 1) {//odd number of elements 
       return[array[Math.floor(array.length / 2)]]; //array.length/2 to get to the middle..math.floor ?
     } else if (array.length % 2 === 0) { //even number of elements
-    return[array[Math.round(array.length / 2) -1 ],
+    return[array[Math.round(array.length / 2) -1 ],//return array with middle 2 in even array
     array[Math.round(array.length / 2)]
     ]}
   }
